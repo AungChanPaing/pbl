@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Payment Page</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+      body {
+        background-color: #f2f2f2;
+        background-image: url(download.jfif);
+        font-family: "Lato", sans-serif;
+        font-size: 20px;
+      }
+
+      .card-header {
+        background-color: #007bff;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .form-group label {
+        font-weight: bold;
+      }
+
+      button[type="submit"] {
+        background-color: #007bff;
+        border: none;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+
+      nav {
+        background: #212529;
+        padding-bottom: 20px;
+      }
+
+      nav ul li {
+        display: inline-block;
+        margin-left: 40px;
+        margin-top: 5px;
+      }
+
+      nav ul li a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 10px;
+        font-family: Georgia;
+        transition: 0.5s;
+      }
+
+      a:hover {
+        background-color: rgb(83, 83, 190);
+        color: white;
+      }
+
+      @media screen and (max-width: 768px) {
+        .checkbtn {
+          display: block;
+        }
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+      }
+
+      footer p {
+        display: inline-block;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <label for="check"><i class="bi bi-list"></i></label>
+      <ul>
+        <li><a href="test (1).html">Home</a></li>
+        <li><a href="test_aboutus1.html">About Us</a></li>
+        <li><a href="payment.html">Donate Now</a></li>
+      </ul>
+    </nav>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Payment Information</div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="name">Name on Card</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter name on card"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="cardNumber">Card Number</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cardNumber"
+                    placeholder="Enter card number"
+                  />
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="expirationDate">Expiration Date</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="expirationDate"
+                      placeholder="MM/YY"
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="cvv">CVV</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cvv"
+                      placeholder="Enter CVV"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="amount">Amount</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="amount"
+                    placeholder="Enter amount"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="paymentMethod">Payment Method</label>
+                  <select class="form-control" id="paymentMethod">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="amex">American Express</option>
+                    <option value="paypal">PayPal</option>
+                  </select>
+                </div>
+                <a href="thankyoupage.html" class="btn btn-primary btn-block"
+                  >Submit Payment</a
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2023 My Website. All Rights Reserved.</p>
+      <p>Contact Us: contact@mywebsite.com</p>
+    </footer>
+  </body>
+</html>
